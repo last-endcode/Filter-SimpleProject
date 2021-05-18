@@ -1,7 +1,10 @@
-<!-- note -->
+# Filter Simple Project
 
-di posisi nya small:
-dia membuat 2coloumn dan juga bisa
-1 coloum (gmbr disamping) harga di samping knan
 
-dan full nya adalah 4 coloumn
+
+>> 1 coloum for small layout
+![This is a alt text.](/Images/wiwa-ss.png "This is a sample image.")
+
+
+>> 4 coloum for 768px +
+![This is a alt text.](/Images/wiwa-ss2.png "This is a sample image.")
