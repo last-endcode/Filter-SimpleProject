@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import collections from './collections';
+import MenuItem from './Components/MenuItem';
+import CategoryItem from './Components/CategoryItem';
+
+const showAllCategories = [
+  'All',
+  ...new Set(collections.map((item) => item.category)),
+];
 
 function App() {
+  const [menu, setMenu] = useState(collections);
+  const [categories, setCategories] = useState(showAllCategories);
+
+  const filterShirt = (category) => {
+    if (category === 'All') {
+      // update
+      setMenu(collections);
+      return;
+    }
+    // originally filter
+    const newFilter = collections.filter((item) => item.category === category);
+    // update
+    setMenu(newFilter);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main class='section'>
+      <div className='main-title'>
+        <h2>best popular</h2>
+      </div>
+      <div className='menu'>
+        <CategoryItem
+          showAllCategories={showAllCategories}
+          filterShirt={filterShirt}
+        />
+        <MenuItem menu={menu} />
+      </div>
+    </main>
   );
 }
 
