@@ -11,6 +11,7 @@ const showAllCategories = [
 function App() {
   const [menu, setMenu] = useState(collections);
   const [categories, setCategories] = useState(showAllCategories);
+  const [index, setIndex] = useState([]);
 
   const filterShirt = (category) => {
     if (category === 'All') {
@@ -25,9 +26,10 @@ function App() {
   };
 
   return (
-    <main class='section'>
+    <main class='section' transition-style='in:circle:center'>
       <div className='main-title'>
         <h2>best popular</h2>
+        {categories[index]}
       </div>
       <div className='menu'>
         <CategoryItem

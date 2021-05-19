@@ -6,8 +6,12 @@ function MenuItem({ menu }) {
       {menu.map((list_menu) => {
         const { link, id, img, title, price, category } = list_menu;
         return (
-          <a href={link}>
-            <article className='menu-picture' key={id}>
+          <a href={img}>
+            <article
+              className='menu-picture'
+              key={id}
+              transition-style='in:wipe:bottom-right'
+            >
               <div className='img-container'>
                 <img src={img} alt='' className='shirt' />
                 <p className='category'>{category}</p>

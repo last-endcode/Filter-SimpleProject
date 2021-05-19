@@ -1,19 +1,17 @@
 const collections = [
-  // hoodie
   {
     id: 1,
-    img: './img/Hoodie-1.jpg',
-    title: 'hoodie button neck blue denim',
-    price: '230.000,00',
-    category: 'Hoodie',
-    link: 'https://www.gomuda.co/collections/hoodie/products/hoodie-button-neck-blue-denim',
+    img: './img/RollNeck-3.jpg',
+    title: 'roll off white black',
+    price: '300.000,00',
+    category: 'Roll Neck',
   },
   {
     id: 2,
-    img: './img/RollNeck-4.jpg',
-    title: 'roll brown sugar',
-    price: '300.000,00',
-    category: 'Roll Neck',
+    img: './img/Cardigan-3.jpg',
+    title: 'cardigan torque dark navy',
+    price: '325.000,00',
+    category: 'Cardigan',
   },
 
   {
@@ -38,13 +36,14 @@ const collections = [
     price: '230.000,00',
     category: 'Hoodie',
   },
-  // cardigan
+
   {
     id: 6,
-    img: './img/Cardigan-1.jpg',
-    title: 'cardigan torque black',
-    price: '325.000,00',
-    category: 'Cardigan',
+    img: './img/Hoodie-1.jpg',
+    title: 'hoodie button neck blue denim',
+    price: '230.000,00',
+    category: 'Hoodie',
+    link: 'https://www.gomuda.co/collections/hoodie/products/hoodie-button-neck-blue-denim',
   },
   {
     id: 7,
@@ -55,11 +54,12 @@ const collections = [
   },
   {
     id: 8,
-    img: './img/Cardigan-3.jpg',
-    title: 'cardigan torque dark navy',
-    price: '325.000,00',
-    category: 'Cardigan',
+    img: './img/RollNeck-4.jpg',
+    title: 'roll brown sugar',
+    price: '300.000,00',
+    category: 'Roll Neck',
   },
+
   {
     id: 9,
     img: './img/Hoodie-4.jpg',
@@ -68,7 +68,6 @@ const collections = [
     category: 'Hoodie',
   },
 
-  // RollNeck
   {
     id: 10,
     img: './img/RollNeck-1.jpg',
@@ -85,10 +84,10 @@ const collections = [
   },
   {
     id: 12,
-    img: './img/RollNeck-3.jpg',
-    title: 'roll off white black',
-    price: '300.000,00',
-    category: 'Roll Neck',
+    img: './img/Cardigan-1.jpg',
+    title: 'cardigan torque black',
+    price: '325.000,00',
+    category: 'Cardigan',
   },
 
   {
